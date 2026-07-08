@@ -1,207 +1,172 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Drew Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drew Store | Shop Acc Uy Tín</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    <link rel="stylesheet" href="style.css">
 
-body{
-background:#0d1117;
-color:white;
-}
-
-header{
-background:linear-gradient(90deg,#00ffae,#00b894);
-padding:18px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
-}
-
-.banner{
-height:320px;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80");
-background-size:cover;
-background-position:center;
-text-align:center;
-}
-
-.banner h1{
-font-size:48px;
-margin-bottom:15px;
-}
-
-.banner p{
-font-size:20px;
-margin-bottom:25px;
-}
-
-.btn{
-padding:14px 35px;
-background:#00ffae;
-color:black;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-transition:.3s;
-}
-
-.btn:hover{
-background:white;
-}
-
-.title{
-text-align:center;
-margin:50px 0 20px;
-font-size:35px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-padding:30px;
-}
-
-.card{
-background:#161b22;
-border-radius:15px;
-overflow:hidden;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px #00ffae;
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
-
-.card h2{
-padding:15px;
-}
-
-.price{
-color:#00ffae;
-font-size:25px;
-padding:0 15px;
-}
-
-.buy{
-margin:15px;
-display:block;
-text-align:center;
-padding:12px;
-background:#00ffae;
-color:black;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-}
-
-footer{
-margin-top:60px;
-background:#161b22;
-padding:30px;
-text-align:center;
-}
-</style>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
 
-<div class="logo">Drew Store</div>
+<div class="logo">
+🎮 Drew Store
+</div>
 
 <nav>
+
 <a href="#">Trang Chủ</a>
-<a href="#">Minecraft</a>
-<a href="#">Free Fire</a>
-<a href="#">Discord</a>
+
+<a href="#minecraft">Minecraft</a>
+
+<a href="#freefire">Free Fire</a>
+
+<a href="#contact">Liên Hệ</a>
+
 </nav>
 
 </header>
 
-<section class="banner">
+<section class="hero">
 
-<h1>Drew Store</h1>
+<div class="hero-text">
 
-<p>Shop Acc Minecraft & Free Fire Uy Tín</p>
+<h1>DREW STORE</h1>
 
-<a class="btn" href="#">Mua Ngay</a>
+<p>
+Shop Acc Minecraft & Free Fire Uy Tín
+</p>
+
+<a href="#shop" class="btn">
+Mua Ngay
+</a>
+
+</div>
 
 </section>
 
-<h1 class="title">🔥 Sản Phẩm Nổi Bật</h1>
+<section class="stats">
 
-<section class="products">
+<div class="box">
+<h2>500+</h2>
+<p>Khách Hàng</p>
+</div>
 
-<div class="card">
+<div class="box">
+<h2>1200+</h2>
+<p>Acc Đã Bán</p>
+</div>
+
+<div class="box">
+<h2>4.9★</h2>
+<p>Đánh Giá</p>
+</div>
+
+</section>
+
+<section id="shop">
+
+<h2 class="title">
+🔥 SẢN PHẨM NỔI BẬT
+</h2>
+
+<div class="products">
+
+<div class="card" id="minecraft">
 
 <img src="https://1drewmcvn.github.io/Drew-Store/minecraft-sinh-ton-the-gioi-lap-phuong-229031-logo-22-09-2020.png">
 
 <h2>Acc Minecraft Premium</h2>
 
-<p class="price">150.000đ</p>
+<p>
+✔ Full Access<br>
+✔ Premium Chính Hãng
+</p>
 
-<a class="buy" href="#">MUA NGAY</a>
+<div class="price">
+150.000đ
+</div>
+
+<a href="#" class="buy">
+MUA NGAY
+</a>
 
 </div>
 
-<div class="bank">
+<div class="card" id="freefire">
 
-<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80">
+<img src="images/freefire.jpg">
 
 <h2>Acc Free Fire</h2>
 
-<p class="price">300.000đ</p>
+<p>
+✔ Rank Cao<br>
+✔ Skin VIP
+</p>
 
-<a class="buy" href="#">MUA NGAY</a>
+<div class="price">
+300.000đ
+</div>
+
+<a href="#" class="buy">
+MUA NGAY
+</a>
+
+</div>
 
 </div>
 
 </section>
 
-<footer>
+<section class="about">
+
+<h2>
+Vì Sao Chọn Drew Store?
+</h2>
+
+<div class="about-list">
+
+<div>
+⚡ Giao Acc Nhanh
+</div>
+
+<div>
+🔒 Bảo Hành Uy Tín
+</div>
+
+<div>
+💎 Giá Rẻ
+</div>
+
+<div>
+🛡 Hỗ Trợ 24/7
+</div>
+
+</div>
+
+</section>
+
+<footer id="contact">
 
 <h2>Drew Store</h2>
 
-<p>Discord | Zalo | Facebook</p>
+<p>
+Discord | Zalo | Facebook
+</p>
 
-<p>© 2026 Drew Store. All rights reserved.</p>
+<p>
+© 2026 Drew Store. All Rights Reserved.
+</p>
 
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
