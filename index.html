@@ -1,61 +1,207 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drew Store</title>
-    <style>
-        body{
-            margin:0;
-            background:#111;
-            color:white;
-            font-family:Arial,sans-serif;
-        }
-        header{
-            background:#00b894;
-            padding:20px;
-            text-align:center;
-        }
-        .box{
-            max-width:900px;
-            margin:30px auto;
-            padding:20px;
-        }
-        .card{
-            background:#222;
-            padding:20px;
-            border-radius:10px;
-            margin-bottom:20px;
-        }
-        button{
-            background:#00b894;
-            color:white;
-            border:none;
-            padding:10px 20px;
-            border-radius:5px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drew Store</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0d1117;
+color:white;
+}
+
+header{
+background:linear-gradient(90deg,#00ffae,#00b894);
+padding:18px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.banner{
+height:320px;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url("https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80");
+background-size:cover;
+background-position:center;
+text-align:center;
+}
+
+.banner h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.banner p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.btn{
+padding:14px 35px;
+background:#00ffae;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+.title{
+text-align:center;
+margin:50px 0 20px;
+font-size:35px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:30px;
+}
+
+.card{
+background:#161b22;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px #00ffae;
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h2{
+padding:15px;
+}
+
+.price{
+color:#00ffae;
+font-size:25px;
+padding:0 15px;
+}
+
+.buy{
+margin:15px;
+display:block;
+text-align:center;
+padding:12px;
+background:#00ffae;
+color:black;
+font-weight:bold;
+text-decoration:none;
+border-radius:8px;
+}
+
+footer{
+margin-top:60px;
+background:#161b22;
+padding:30px;
+text-align:center;
+}
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>Drew Store</h1>
-    <p>Website Drew Store bán Acc Minecraft - Free Fire</p>
+
+<div class="logo">Drew Store</div>
+
+<nav>
+<a href="#">Trang Chủ</a>
+<a href="#">Minecraft</a>
+<a href="#">Free Fire</a>
+<a href="#">Discord</a>
+</nav>
+
 </header>
 
-<div class="box">
-    <div class="bank">
-        <h2>Acc Minecraft Premium</h2>
-        <p>Giá: 150.000đ</p>
-        <button>Mua ngay</button>
-    </div>
+<section class="banner">
 
-    <div class="card">
-        <h2>Acc Free Fire</h2>
-        <p>Giá: 300.000đ</p>
-        <button>Chọn Acc</button>
-    </div>
+<h1>Drew Store</h1>
+
+<p>Shop Acc Minecraft & Free Fire Uy Tín</p>
+
+<a class="btn" href="#">Mua Ngay</a>
+
+</section>
+
+<h1 class="title">🔥 Sản Phẩm Nổi Bật</h1>
+
+<section class="products">
+
+<div class="card">
+
+<img src="https://share.google/WDu1zfSLOLcmKlZYf">
+
+<h2>Acc Minecraft Premium</h2>
+
+<p class="price">150.000đ</p>
+
+<a class="buy" href="#">MUA NGAY</a>
+
 </div>
+
+<div class="bank">
+
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80">
+
+<h2>Acc Free Fire</h2>
+
+<p class="price">300.000đ</p>
+
+<a class="buy" href="#">MUA NGAY</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Drew Store</h2>
+
+<p>Discord | Zalo | Facebook</p>
+
+<p>© 2026 Drew Store. All rights reserved.</p>
+
+</footer>
 
 </body>
 </html>
